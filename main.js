@@ -1,17 +1,18 @@
 const file = "/csvs/current.csv";
 
 Papa.parse(file, {
+  download: true,
   complete: function(results) {
     const data = results.data;
     const teams = {};  // Object to store aggregated team data
-    
+
     // Process each row (expecting at least 25 columns: indexes 0–24)
     data.forEach(row => {
       if (row.length < 25) return;
-      
+
       const teamNumber = row[0].trim();
       const matchNumber = row[2].trim();
-      
+
       // Parse numeric columns (using 0 if not a valid number)
       const moved           = parseFloat(row[3])  || 0;
       const coralL1         = parseFloat(row[4])  || 0;
@@ -31,13 +32,13 @@ Papa.parse(file, {
       const processorAlgaeTeleop = parseFloat(row[18]) || 0;
       const playedDefense   = parseFloat(row[19]) || 0;
       const died            = parseFloat(row[20]) || 0;
-      
+
       // Non-numeric fields
       const endPosition     = row[21].trim();
       const climbingMech    = row[22].trim();
       const card            = row[23].trim();
       const comment         = row[24].trim();
-      
+
       // Initialize the team object if it doesn't exist
       if (!teams[teamNumber]) {
         teams[teamNumber] = {
@@ -68,9 +69,9 @@ Papa.parse(file, {
           count: 0
         };
       }
-      
+
       const team = teams[teamNumber];
-      
+
       // Collect match numbers and sum numeric values
       team.matchNumbers.push(matchNumber);
       team.movedSum           += moved;
@@ -91,30 +92,30 @@ Papa.parse(file, {
       team.processorAlgaeTeleopSum += processorAlgaeTeleop;
       team.playedDefenseSum   += playedDefense;
       team.diedSum            += died;
-      
+
       // Tally end position occurrences (e.g., "No", "P", "Sc", "Dc")
       if (endPosition) {
         team.endPositionCounts[endPosition] = (team.endPositionCounts[endPosition] || 0) + 1;
       }
-      
+
       // For climbing mechanism, record the first instance that isn’t "DC"
       if (!team.climbingMechanism && climbingMech && climbingMech !== "DC") {
         team.climbingMechanism = climbingMech;
       }
-      
+
       // For cards, only record "Yellow" or "Red"
       if (card === "Yellow" || card === "Red") {
         team.cardList.push(card);
       }
-      
+
       // Append comments
       if (comment) {
         team.commentList.push(comment);
       }
-      
+
       team.count++;
     });
-    
+
     // Mapping for pickup location values
     const pickupMapping = {
       1: "None",
@@ -122,15 +123,15 @@ Papa.parse(file, {
       3: "Human Player",
       4: "Both"
     };
-    
+
     // Clear out any previous content
     const container = document.getElementById("teamsContainer");
     container.innerHTML = "";
-    
+
     // For each team, create a collapsible dropdown (using <details>)
     Object.values(teams).forEach(team => {
       const count = team.count;
-      
+
       // Compute raw averages as numbers for calculation
       const movedAvgNum              = team.movedSum / count;
       const coralL1AvgNum            = team.coralL1Sum / count;
@@ -145,7 +146,7 @@ Papa.parse(file, {
       const coralL4TeleopAvgNum      = team.coralL4TeleopSum / count;
       const bargeAlgaeTeleopAvgNum   = team.bargeAlgaeTeleopSum / count;
       const processorAlgaeTeleopAvgNum = team.processorAlgaeTeleopSum / count;
-      
+
       // Compute averages as formatted strings for display
       const movedAvg           = movedAvgNum.toFixed(2);
       const coralL1Avg         = coralL1AvgNum.toFixed(2);
@@ -165,7 +166,7 @@ Papa.parse(file, {
       const playedDefenseAvg   = (team.playedDefenseSum / count).toFixed(2);
       const diedAvg            = (team.diedSum / count).toFixed(2);
       const pickupLabel = pickupMapping[team.pickupMax] || "None";
-      
+
       // Compute the average points earned by the team using the given multipliers
       const avgPoints = (
         (movedAvgNum * 3) +
@@ -182,17 +183,17 @@ Papa.parse(file, {
         (processorAlgaeTeleopAvgNum * 6) +
         (bargeAlgaeTeleopAvgNum * 4)
       ).toFixed(2);
-      
+
       // Build end position counts string (e.g., "No: 2 P: 1 Sc: 0 Dc: 3")
       let endPositionsStr = "";
       for (const pos in team.endPositionCounts) {
         endPositionsStr += `${pos}: ${team.endPositionCounts[pos]} `;
       }
       endPositionsStr = endPositionsStr.trim();
-      
+
       // Determine climbing mechanism; default to "DC" if none was found
       const climbingMechanism = team.climbingMechanism ? team.climbingMechanism : "DC";
-      
+
       // Summarize cards (only Yellow/Red)
       const cardCounts = team.cardList.reduce((acc, card) => {
         acc[card] = (acc[card] || 0) + 1;
@@ -203,44 +204,44 @@ Papa.parse(file, {
         cardStr += `${card}: ${cardCounts[card]} `;
       }
       cardStr = cardStr.trim();
-      
+
       // Concatenate comments (each truncated to about 50 characters)
       const commentsStr = team.commentList.map(c => c.substring(0,50)).join(" | ");
-      
+
       // Construct a detailed text summary with the additional Avg Points field
       const detailsText = `
-      Matches: [${team.matchNumbers.join(', ')}]
-      Avg Points: ${avgPoints}
-      Auto:
-      Moved Avg: ${movedAvg}
-      Coral L1: ${coralL1Avg} | Coral L2: ${coralL2Avg} | Coral L3: ${coralL3Avg} | Coral L4: ${coralL4Avg}
-      Barge: ${bargeAlgaeAvg} | Processor: ${processorAlgaeAvg}
-      Dislodged: ${dislodgedAlgaeAvg} 
-      Teleop:
-      Dislodged: ${dislodgedTeleopAvg}
-      Teleop Coral L1: ${coralL1TeleopAvg} | Teleop Coral L2: ${coralL2TeleopAvg}
-      Teleop Coral L3: ${coralL3TeleopAvg} | Teleop Coral L4: ${coralL4TeleopAvg}
-      Teleop Barge: ${bargeAlgaeTeleopAvg} | Teleop Processor: ${processorAlgaeTeleopAvg}
-      Defense: ${playedDefenseAvg} | Died: ${diedAvg}
-      Pickup: ${pickupLabel}
-      Endgame:
-      End Pos: [${endPositionsStr}]
-      Climb: ${climbingMechanism}
-      Cards: [${cardStr}]
-      Comments: [${commentsStr}]
+Matches: [${team.matchNumbers.join(', ')}]
+Avg Points: ${avgPoints}
+Auto:
+  Moved Avg: ${movedAvg}
+  Coral L1: ${coralL1Avg} | Coral L2: ${coralL2Avg} | Coral L3: ${coralL3Avg} | Coral L4: ${coralL4Avg}
+  Barge: ${bargeAlgaeAvg} | Processor: ${processorAlgaeAvg}
+  Dislodged: ${dislodgedAlgaeAvg} 
+Teleop:
+  Dislodged: ${dislodgedTeleopAvg}
+  Teleop Coral L1: ${coralL1TeleopAvg} | Teleop Coral L2: ${coralL2TeleopAvg}
+  Teleop Coral L3: ${coralL3TeleopAvg} | Teleop Coral L4: ${coralL4TeleopAvg}
+  Teleop Barge: ${bargeAlgaeTeleopAvg} | Teleop Processor: ${processorAlgaeTeleopAvg}
+Defense: ${playedDefenseAvg} | Died: ${diedAvg}
+Pickup: ${pickupLabel}
+Endgame:
+  End Pos: [${endPositionsStr}]
+  Climb: ${climbingMechanism}
+Cards: [${cardStr}]
+Comments: [${commentsStr}]
       `;
-      
+
       // Create the details element and set its inner HTML
       const detailsEl = document.createElement("details");
       const summaryEl = document.createElement("summary");
       summaryEl.textContent = `Team ${team.teamNumber}`;
       detailsEl.appendChild(summaryEl);
-      
+
       const infoEl = document.createElement("pre");
       infoEl.classList.add("team-info");
       infoEl.textContent = detailsText;
       detailsEl.appendChild(infoEl);
-      
+
       // Append the details block to the container
       container.appendChild(detailsEl);
     });
