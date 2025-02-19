@@ -1,4 +1,4 @@
-const file = "/csvs/current.csv";
+const file = "csvs/current.csv";
 
 Papa.parse(file, {
   download: true,
