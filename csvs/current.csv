@@ -1,4 +1,22 @@
 6201,P Diddy,17,true,0,0,0,1,0,0,false,false,,0,0,0,7,0,0,false,false,Dc,SA,No Card,Calvin Why do you do this to me?
+501,Bn,3,false,0,0,0,0,0,0,false,false,,0,0,0,1,0,0,false,false,Dc,MP,No Card,Didn窶冲 do much and damaged part of itself.
+10156,Bn,4,false,0,0,0,0,0,0,false,false,,0,0,0,0,0,0,false,false,No,DC,No Card,Didn窶冲 move during the whole match.
+811,Bn,2,true,0,0,0,0,0,0,false,false,,0,0,1,0,0,0,false,false,P,DC,No Card,Very slow and didn窶冲 do very much 
+4987,Bn,3,false,0,0,0,0,0,0,false,false,,0,0,0,0,0,0,false,false,No,DC,No Card,No show
+8410,Bn,4,true,0,0,0,0,0,0,false,false,,0,0,1,0,0,0,false,false,No,DC,No Card,Scored at least once? Didn窶冲 do very much
+6690,Bn,5,true,0,0,0,0,0,0,false,true,,0,0,0,0,0,1,false,false,P,DC,No Card,Got stuck on an algae and didn窶冲 do very much.
+1058,Bn,6,true,0,0,0,1,0,0,false,false,,0,1,1,2,0,0,false,false,P,DC,No Card,Scored on different levels
+663,Bn,14,false,0,0,0,0,0,0,false,true,,0,0,0,7,0,0,false,false,No,DC,No Card,Accidentally dislodged an algae.
+5902,Bn,15,true,0,0,0,0,0,0,false,false,,0,0,0,1,0,0,false,false,No,DC,No Card,Dropped 2 coral + takes a while to grab and score
+1058,Bn,16,true,0,0,0,0,0,0,false,false,,0,0,0,6,0,0,false,false,P,SA,No Card,Attempted to climb and kept missing.
+8708,Bn,17,true,0,0,0,0,0,0,false,false,,1,1,0,3,0,0,false,false,P,DC,No Card,Only spun in auto 
+5491,Bn,18,false,0,0,0,0,0,0,false,false,,0,0,0,0,0,0,false,false,No,DC,No Card,Didn窶冲 move during the whole match
+2342,Bn,19,true,0,0,0,1,0,0,false,false,,0,0,0,6,0,0,false,false,P,DC,No Card,Messed up climbing up multiple times
+6620,Bn,20,false,0,0,0,0,0,0,false,false,,2,0,1,0,0,0,false,false,P,DC,No Card,Attempted to climb but failed
+3566,Bn,21,true,0,0,0,0,0,0,false,false,,0,0,0,0,0,0,false,false,No,DC,No Card,Didn窶冲 score once and kept missing the coral
+4925,Bn,34,true,0,0,0,0,0,0,false,false,,2,2,0,0,0,0,false,false,P,DC,No Card,Missed and lost coral a few times.
+4987,Bn,36,false,0,0,0,0,0,0,false,false,,0,0,0,0,0,0,false,false,No,DC,No Card,It didn窶冲 move during the entire match.
+9443,Bn,37,false,0,0,0,0,0,0,false,false,,0,0,0,0,0,0,false,false,No,DC,No Card,It didn窶冲 move during the whole match.
 318,Aj,1,true,0,0,0,0,0,0,false,false,3,0,0,0,0,0,2,false,false,P,DC,No Card,Wobble fest with hypothetical coral
 138,Aj,2,true,0,0,0,0,0,0,false,false,3,0,0,0,0,0,0,false,false,P,MP,No Card,(p diddy is calvin)
 2877,Aj,3,true,0,0,0,1,0,0,false,true,3,0,0,0,7,0,0,false,false,Dc,SA,No Card,
@@ -12,6 +30,7 @@
 97,Aj,15,false,0,0,0,0,0,0,false,false,3,0,0,0,0,0,0,true,false,No,DC,No Card,Plywood and tape
 9729,Aj,16,false,0,0,0,0,0,0,false,false,,0,0,0,0,0,0,true,false,P,DC,No Card,Night night knights
 7314,Aj,17,true,0,0,0,0,0,0,false,false,,5,0,0,0,0,1,false,false,P,DC,No Card,Scooped a coral out of l1
+3623,Aj,4,true,0,0,0,0,0,0,false,false,,0,0,0,0,0,0,false,false,No,DC,No Card,Got lost on the wrong side of the field
 2342,james,19,true,0,0,0,0,0,0,false,false,,0,0,0,4,0,0,false,false,P,SA,No Card,tried climbing
 8013,james,20,true,0,0,0,1,1,0,false,false,,0,0,0,0,4,0,false,false,Dc,SA,No Card,
 1768,nerd,21,false,0,0,0,1,0,0,false,false,,0,1,4,4,0,0,false,false,No,DC,No Card,
