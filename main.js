@@ -1,4 +1,4 @@
-const file = "./csvs/current.csv";
+const file = "/csvs/current.csv";
 
 Papa.parse(file, {
   download: true,
@@ -93,12 +93,12 @@ Papa.parse(file, {
       team.playedDefenseSum   += playedDefense;
       team.diedSum            += died;
 
-      // Tally end position occurrences (e.g., "No", "P", "Sc", "Dc")
+      // Tally end position occurrences
       if (endPosition) {
         team.endPositionCounts[endPosition] = (team.endPositionCounts[endPosition] || 0) + 1;
       }
 
-      // For climbing mechanism, record the first instance that isn’t "DC"
+      // Record climbing mechanism if it isn’t "DC"
       if (!team.climbingMechanism && climbingMech && climbingMech !== "DC") {
         team.climbingMechanism = climbingMech;
       }
@@ -128,11 +128,12 @@ Papa.parse(file, {
     const container = document.getElementById("teamsContainer");
     container.innerHTML = "";
 
-    // For each team, create a collapsible dropdown (using <details>)
-    Object.values(teams).forEach(team => {
-      const count = team.count;
+    // Convert teams object to an array
+    const teamsArray = Object.values(teams);
 
-      // Compute raw averages as numbers for calculation
+    // Calculate each team's numeric average points and store it for sorting
+    teamsArray.forEach(team => {
+      const count = team.count;
       const movedAvgNum              = team.movedSum / count;
       const coralL1AvgNum            = team.coralL1Sum / count;
       const coralL2AvgNum            = team.coralL2Sum / count;
@@ -147,7 +148,45 @@ Papa.parse(file, {
       const bargeAlgaeTeleopAvgNum   = team.bargeAlgaeTeleopSum / count;
       const processorAlgaeTeleopAvgNum = team.processorAlgaeTeleopSum / count;
 
-      // Compute averages as formatted strings for display
+      team.avgPointsNum = 
+        (movedAvgNum * 3) +
+        (coralL1AvgNum * 3) +
+        (coralL2AvgNum * 4) +
+        (coralL3AvgNum * 6) +
+        (coralL4AvgNum * 7) +
+        (processorAlgaeAvgNum * 6) +
+        (bargeAlgaeAvgNum * 4) +
+        (coralL1TeleopAvgNum * 2) +
+        (coralL2TeleopAvgNum * 3) +
+        (coralL3TeleopAvgNum * 4) +
+        (coralL4TeleopAvgNum * 5) +
+        (processorAlgaeTeleopAvgNum * 6) +
+        (bargeAlgaeTeleopAvgNum * 4);
+    });
+
+    // Sort teams in descending order by avgPointsNum
+    teamsArray.sort((a, b) => b.avgPointsNum - a.avgPointsNum);
+
+    // Create a collapsible dropdown for each team in the sorted order
+    teamsArray.forEach(team => {
+      const count = team.count;
+
+      // Compute averages for display
+      const movedAvgNum              = team.movedSum / count;
+      const coralL1AvgNum            = team.coralL1Sum / count;
+      const coralL2AvgNum            = team.coralL2Sum / count;
+      const coralL3AvgNum            = team.coralL3Sum / count;
+      const coralL4AvgNum            = team.coralL4Sum / count;
+      const bargeAlgaeAvgNum         = team.bargeAlgaeSum / count;
+      const processorAlgaeAvgNum     = team.processorAlgaeSum / count;
+      const coralL1TeleopAvgNum      = team.coralL1TeleopSum / count;
+      const coralL2TeleopAvgNum      = team.coralL2TeleopSum / count;
+      const coralL3TeleopAvgNum      = team.coralL3TeleopSum / count;
+      const coralL4TeleopAvgNum      = team.coralL4TeleopSum / count;
+      const bargeAlgaeTeleopAvgNum   = team.bargeAlgaeTeleopSum / count;
+      const processorAlgaeTeleopAvgNum = team.processorAlgaeTeleopSum / count;
+
+      // Compute formatted averages
       const movedAvg           = movedAvgNum.toFixed(2);
       const coralL1Avg         = coralL1AvgNum.toFixed(2);
       const coralL2Avg         = coralL2AvgNum.toFixed(2);
@@ -167,24 +206,10 @@ Papa.parse(file, {
       const diedAvg            = (team.diedSum / count).toFixed(2);
       const pickupLabel = pickupMapping[team.pickupMax] || "None";
 
-      // Compute the average points earned by the team using the given multipliers
-      const avgPoints = (
-        (movedAvgNum * 3) +
-        (coralL1AvgNum * 3) +
-        (coralL2AvgNum * 4) +
-        (coralL3AvgNum * 6) +
-        (coralL4AvgNum * 7) +
-        (processorAlgaeAvgNum * 6) +
-        (bargeAlgaeAvgNum * 4) +
-        (coralL1TeleopAvgNum * 2) +
-        (coralL2TeleopAvgNum * 3) +
-        (coralL3TeleopAvgNum * 4) +
-        (coralL4TeleopAvgNum * 5) +
-        (processorAlgaeTeleopAvgNum * 6) +
-        (bargeAlgaeTeleopAvgNum * 4)
-      ).toFixed(2);
+      // Format the average points for display
+      const avgPoints = team.avgPointsNum.toFixed(2);
 
-      // Build end position counts string (e.g., "No: 2 P: 1 Sc: 0 Dc: 3")
+      // Build end position counts string
       let endPositionsStr = "";
       for (const pos in team.endPositionCounts) {
         endPositionsStr += `${pos}: ${team.endPositionCounts[pos]} `;
@@ -208,7 +233,7 @@ Papa.parse(file, {
       // Concatenate comments (each truncated to about 50 characters)
       const commentsStr = team.commentList.map(c => c.substring(0,50)).join(" | ");
 
-      // Construct a detailed text summary with the additional Avg Points field
+      // Construct detailed text summary
       const detailsText = `
 Matches: [${team.matchNumbers.join(', ')}]
 Avg Points: ${avgPoints}
