@@ -27,11 +27,14 @@
 3623,Jrg,16,true,0,0,0,0,0,0,false,false,,0,0,0,1,0,0,false,false,P,DC,No Card,
 3566,Jrg,17,true,0,0,0,0,0,0,false,false,,0,0,1,0,0,0,false,false,No,DC,No Card,
 9729,P Diddy ,1,false,0,0,0,0,0,0,false,false,,0,0,0,2,0,0,false,false,P,DC,No Card,
-9443,P Diddy ,3,false,0,0,0,0,0,0,false,false,,0,0,0,0,0,0,false,false,Dc,SA,No Card,Tried, but couldn't score so became a bumper bot
-1277,P Diddy ,4,false,0,0,0,0,0,0,false,false,,0,0,0,2,0,0,false,false,Dc,SA,No Card,Trying to score algae, didn't
-1768,P Diddy ,5,true,0,0,0,1,0,0,false,false,,1,2,4,3,0,0,false,false,No,DC,No Card,Very fast in all things, helped other robot 総 
-7314,P Diddy ,6,true,0,0,0,0,0,0,false,false,,3,0,0,0,0,1,false,false,No,DC,No Card,Slow, try to score more algae, didn't.
+9443,P Diddy ,3,false,0,0,0,0,0,0,false,false,,0,0,0,0,0,0,false,false,Dc,SA,No Card,Tried but couldn't score so became a bumper bot
+1277,P Diddy ,4,false,0,0,0,0,0,0,false,false,,0,0,0,2,0,0,false,false,Dc,SA,No Card,Trying to score algae didn't
+1768,P Diddy ,5,true,0,0,0,1,0,0,false,false,,1,2,4,3,0,0,false,false,No,DC,No Card,Very fast in all things helped other robot 総 
+7314,P Diddy ,6,true,0,0,0,0,0,0,false,false,,3,0,0,0,0,1,false,false,No,DC,No Card,Slow try to score more algae didn't.
 10156,P Diddy ,7,true,0,0,0,0,0,0,false,false,,0,0,0,0,0,0,false,true,No,DC,No Card,Bad 綜 
 5962,KD,14,true,1,0,0,0,0,0,false,true,3,0,2,0,0,0,0,false,false,P,DC,No Card,Very bad at picking from human player and placing
-1277,KD,15,true,0,0,0,0,0,0,false,false,3,0,0,0,2,0,0,false,false,P,DC,No Card,Very shaky, almost tipped
-1768,KD,16,true,1,0,0,0,0,0,false,true,3,0,1,4,1,2,0,false,false,P,DC,No Card,Very stable bot, good at multitasking
+1277,KD,15,true,0,0,0,0,0,0,false,false,3,0,0,0,2,0,0,false,false,P,DC,No Card,Very shaky almost tipped
+1768,KD,16,true,1,0,0,0,0,0,false,true,3,0,1,4,1,2,0,false,false,P,DC,No Card,Very stable bot good at multitasking
+1761,P Diddy,16,false,0,0,0,0,0,0,false,false,,0,0,0,0,0,0,true,false,P,DC,No Card,
+9644,KD,17,true,0,0,0,0,0,0,false,false,3,0,0,0,8,0,0,false,false,P,DC,No Card,
+6201,P Diddy,17,true,0,0,0,1,0,0,false,false,,0,0,0,7,0,0,false,false,Dc,SA,No Card,総
