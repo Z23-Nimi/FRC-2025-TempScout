@@ -12,6 +12,17 @@
 97,Aj,15,false,0,0,0,0,0,0,false,false,3,0,0,0,0,0,0,true,false,No,DC,No Card,Plywood and tape
 9729,Aj,16,false,0,0,0,0,0,0,false,false,,0,0,0,0,0,0,true,false,P,DC,No Card,Night night knights
 7314,Aj,17,true,0,0,0,0,0,0,false,false,,5,0,0,0,0,1,false,false,P,DC,No Card,Scooped a coral out of l1
+2342,james,19,true,0,0,0,0,0,0,false,false,,0,0,0,4,0,0,false,false,P,SA,No Card,tried climbing
+8013,james,20,true,0,0,0,1,1,0,false,false,,0,0,0,0,4,0,false,false,Dc,SA,No Card,
+1768,nerd,21,false,0,0,0,1,0,0,false,false,,0,1,4,4,0,0,false,false,No,DC,No Card,
+6201,nerd,537,false,0,0,0,1,0,0,false,false,,0,4,1,4,0,0,false,false,Dc,SA,No Card,good bot
+0,nerd,23,true,0,0,0,0,0,0,false,false,,0,0,0,0,0,0,true,false,P,MP,No Card,
+1721,Class D License ,24,false,0,0,0,0,0,0,false,false,,0,0,0,0,0,0,false,false,P,DC,No Card,arm broke half way through match
+10156,Class D License ,25,false,0,0,0,0,0,0,false,false,,0,0,0,0,0,0,false,false,No,DC,No Card,no show
+6201,Class D License ,26,true,0,0,0,1,0,0,false,false,,0,0,0,1,0,0,false,true,No,DC,No Card,
+663,Class D License ,27,true,0,0,0,0,0,0,false,false,,0,0,0,1,0,0,true,false,P,DC,No Card,
+8013,Class D License ,29,false,0,0,0,1,1,0,false,false,,0,0,0,2,0,0,false,false,Dc,SA,No Card,
+5962,Class D License ,30,true,0,0,0,0,0,0,false,false,,0,0,0,0,0,0,false,false,P,DC,No Card,no one was scouting 6690 but it tipped
 1761,Jrg,1,true,0,0,0,0,0,0,false,false,,0,0,0,0,0,0,false,false,P,DC,No Card,
 3566,Jrg,2,true,0,0,0,0,0,0,false,false,,0,0,0,0,0,0,true,false,No,DC,No Card,
 97,Jrg,3,true,0,0,0,0,0,0,false,false,,0,0,0,0,0,0,true,false,P,DC,No Card,
@@ -26,6 +37,17 @@
 1277,Jrg,15,false,0,0,0,0,0,0,false,false,,0,0,0,2,0,0,false,false,Dc,SA,No Card,
 3623,Jrg,16,true,0,0,0,0,0,0,false,false,,0,0,0,1,0,0,false,false,P,DC,No Card,
 3566,Jrg,17,true,0,0,0,0,0,0,false,false,,0,0,1,0,0,0,false,false,No,DC,No Card,
+811,Jrg,19,true,0,0,0,0,0,0,false,false,,0,0,0,2,0,0,false,false,P,DC,No Card,
+1058,Jrg,20,true,0,0,0,0,0,0,false,false,,0,2,2,2,0,0,false,false,Dc,SA,No Card,
+138,Jrg,21,true,0,0,0,1,0,0,false,false,,0,2,0,6,0,0,false,false,Dc,MP,No Card,
+5491,Jrg,22,false,0,0,0,0,0,0,false,false,1,0,0,0,0,0,0,false,true,No,DC,No Card,
+1761,Jrg,23,true,0,0,0,0,0,0,false,false,,0,0,0,1,0,0,false,false,P,DC,No Card,
+6690,Jrg,24,true,0,0,0,0,0,0,false,true,,0,0,1,2,1,2,false,false,P,DC,No Card,
+97,Jrg,25,true,0,0,0,0,0,0,false,false,,0,0,0,0,0,0,false,false,P,DC,No Card,
+5491,Jrg,26,true,0,0,0,0,0,0,false,false,,0,0,0,0,0,0,false,true,No,DC,No Card,
+138,Jrg,28,true,0,0,0,0,0,0,false,false,,0,0,0,5,0,0,false,false,Sc,MP,No Card,
+8410,Jrg,29,false,0,0,0,0,0,0,false,false,,0,0,0,0,0,0,false,true,No,DC,No Card,
+1247,Jrg,30,true,0,0,0,0,0,0,false,true,,0,0,0,0,0,0,false,false,P,DC,No Card,
 9729,P Diddy ,1,false,0,0,0,0,0,0,false,false,,0,0,0,2,0,0,false,false,P,DC,No Card,
 9443,P Diddy ,3,false,0,0,0,0,0,0,false,false,,0,0,0,0,0,0,false,false,Dc,SA,No Card,Tried but couldn't score so became a bumper bot
 1277,P Diddy ,4,false,0,0,0,0,0,0,false,false,,0,0,0,2,0,0,false,false,Dc,SA,No Card,Trying to score algae didn't
@@ -38,3 +60,10 @@
 1761,P Diddy,16,false,0,0,0,0,0,0,false,false,,0,0,0,0,0,0,true,false,P,DC,No Card,
 9644,KD,17,true,0,0,0,0,0,0,false,false,3,0,0,0,8,0,0,false,false,P,DC,No Card,
 6201,P Diddy,17,true,0,0,0,1,0,0,false,false,,0,0,0,7,0,0,false,false,Dc,SA,No Card,総
+6328,Your mom,18,true,1,0,0,0,0,0,false,false,,0,0,0,0,0,2,true,false,Dc,SA,No Card,
+8410,KD,18,true,0,0,0,0,0,0,false,false,3,0,0,0,2,0,0,false,false,No,DC,No Card,
+97,Your mom,31,false,0,0,0,0,0,0,false,false,,0,0,0,0,0,0,true,false,P,DC,No Card,Bumper bot
+8708,OK,32,true,0,0,0,0,0,0,false,false,,0,1,2,2,0,0,false,false,No,DC,No Card,
+138,US,33,true,0,0,0,0,0,0,false,false,,0,1,4,3,0,0,false,false,P,DC,No Card,
+319,US,34,true,0,0,0,0,0,0,false,false,,0,0,2,4,0,2,false,false,Dc,SA,No Card,Good at climbing
+663,US,36,true,0,0,0,1,0,0,false,false,,0,0,0,10,0,0,false,false,No,DC,No Card,No working friendly bots
