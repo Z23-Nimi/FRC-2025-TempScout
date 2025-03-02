@@ -17,7 +17,12 @@
 4925,Bn,34,true,0,0,0,0,0,0,false,false,,2,2,0,0,0,0,false,false,P,DC,No Card,Missed and lost coral a few times.
 4987,Bn,36,false,0,0,0,0,0,0,false,false,,0,0,0,0,0,0,false,false,No,DC,No Card,It didn窶冲 move during the entire match.
 9443,Bn,37,false,0,0,0,0,0,0,false,false,,0,0,0,0,0,0,false,false,No,DC,No Card,It didn窶冲 move during the whole match.
-318,Aj,1,true,0,0,0,0,0,0,false,false,3,0,0,0,0,0,2,false,false,P,DC,No Card,Wobble fest with hypothetical coral
+10156,Bn,43,true,0,0,0,0,0,0,false,false,,3,0,0,0,0,0,false,false,P,DC,No Card,Can窶冲 score high climb or move fast
+319,Bn,48,true,0,0,0,0,0,0,false,false,,0,0,0,2,0,4,false,false,P,DC,No Card,Cannot climb currently.
+6620,Bn,52,true,0,0,0,0,0,0,false,true,,1,0,1,0,0,0,false,false,P,DC,No Card,Tried to climb with 1 minute left in the match.
+5902,Bn,53,true,0,0,0,1,0,0,false,true,,0,0,0,2,0,0,false,false,No,DC,No Card,Failed to grab coral from the human station a LOT
+4909,Bn,54,true,0,0,0,2,0,0,false,true,,0,0,0,5,0,0,false,false,No,DC,No Card,Messed up it窶冱 positioning a LOT when scoring
+319,Aj,1,true,0,0,0,0,0,0,false,false,3,0,0,0,0,0,2,false,false,P,DC,No Card,Wobble fest with hypothetical coral
 138,Aj,2,true,0,0,0,0,0,0,false,false,3,0,0,0,0,0,0,false,false,P,MP,No Card,(p diddy is calvin)
 2877,Aj,3,true,0,0,0,1,0,0,false,true,3,0,0,0,7,0,0,false,false,Dc,SA,No Card,
 2342,Aj,5,false,0,0,0,0,0,0,false,false,3,0,0,0,6,0,0,false,false,P,DC,No Card,
@@ -31,10 +36,42 @@
 9729,Aj,16,false,0,0,0,0,0,0,false,false,,0,0,0,0,0,0,true,false,P,DC,No Card,Night night knights
 7314,Aj,17,true,0,0,0,0,0,0,false,false,,5,0,0,0,0,1,false,false,P,DC,No Card,Scooped a coral out of l1
 3623,Aj,4,true,0,0,0,0,0,0,false,false,,0,0,0,0,0,0,false,false,No,DC,No Card,Got lost on the wrong side of the field
+10156,Ev,1,false,0,0,0,0,0,0,false,false,3,0,0,0,0,0,0,false,false,No,DC,No Card,Cannot turn
+6201,EV,4,true,0,0,0,0,0,0,false,false,3,0,0,0,0,0,0,true,false,Dc,SA,No Card,Arm died good defense
+501,EV,5,false,0,0,0,0,0,0,false,true,2,0,0,1,0,0,0,false,false,P,DC,No Card,
+8708,EV,6,true,0,0,0,0,0,0,false,false,3,0,0,0,4,0,0,false,false,P,SA,No Card,
+3566,EV,7,true,0,0,0,0,0,0,false,false,3,0,0,0,0,0,0,false,false,P,DC,No Card,
+1277,EV,8,false,0,0,0,0,0,0,false,false,3,0,0,0,2,0,0,false,false,P,SA,No Card,
+1247,EV,9,true,0,0,0,0,0,0,false,false,,0,0,0,0,0,0,false,false,P,MP,No Card,
+9729,EV,10,false,0,0,0,0,0,0,false,true,,0,0,0,1,0,0,false,false,P,DC,No Card,
+3467,EV,13,true,0,0,0,0,0,0,false,true,3,0,5,5,4,0,0,false,false,P,SA,No Card,Fell off climb
+10156,EV,14,true,0,0,0,0,0,0,false,false,3,2,0,0,0,0,0,false,false,P,DC,No Card,
+501,EV,15,true,0,0,0,0,0,0,false,true,,0,0,0,1,0,0,false,false,P,DC,No Card,
+138,EV,16,true,0,0,0,2,0,0,false,false,3,0,4,1,3,0,0,false,false,P,MP,No Card,
+6690,EV,17,true,0,0,0,0,0,0,false,false,,0,0,0,0,1,0,false,false,Sc,SA,No Card,
+4987,EV,18,true,0,0,0,0,0,0,false,false,,0,0,0,0,0,0,true,false,P,DC,No Card,
+10156,EV,19,true,0,0,0,0,0,0,false,false,3,0,0,0,0,0,0,false,false,No,DC,No Card,
+3467,EV,20,true,0,0,0,2,0,0,false,true,3,0,4,3,3,0,2,false,false,No,DC,No Card,Scored in opposing processor
+9729,EV,31,true,0,0,0,0,0,0,false,true,,0,0,0,0,0,0,false,false,P,DC,No Card,
+10156,EV,34,true,0,0,0,0,0,0,false,false,,6,0,0,0,0,0,false,false,No,DC,No Card,Stuck coral
+2877,EV,36,true,0,0,0,2,0,0,false,false,,0,0,2,7,0,0,false,false,P,SA,No Card,Missed climb one shot
+1721,EV,37,true,0,0,0,0,0,0,false,true,,0,0,0,0,0,3,false,false,P,DC,No Card,Scored algae in opposing processor
+319,EV,39,true,0,0,0,0,0,0,false,false,3,0,0,0,2,0,6,false,false,P,DC,No Card,
+2877,EV,40,true,0,0,0,1,0,0,false,true,,0,0,1,8,0,0,false,false,P,SA,No Card,Missed climb one shot
+1247,EV,41,true,0,0,0,0,0,0,false,false,,0,0,0,0,0,0,true,false,P,DC,No Card,
+5962,EV,42,true,0,0,0,0,0,0,false,false,,0,0,0,0,0,0,true,false,No,DC,No Card,
+2342,EV,43,true,0,0,0,1,0,0,false,false,3,0,0,0,6,0,0,false,false,No,DC,No Card,
+4925,EV,44,true,1,0,0,0,0,0,false,false,3,4,2,0,0,0,0,false,false,P,DC,No Card,
+5902,EV,45,true,0,0,0,0,0,0,false,true,3,1,0,0,1,0,0,false,false,No,DC,No Card,
+3467,EV,46,true,1,0,0,1,0,0,false,true,,0,0,1,8,0,0,false,false,No,DC,No Card,Missed a few times
+6620,EV,47,true,0,0,0,0,0,0,false,false,,1,0,0,0,0,0,false,false,P,SA,No Card,
+1247,EV,49,true,0,0,0,0,0,0,false,false,,0,0,0,0,0,0,true,false,P,DC,No Card,
+4925,EV,50,true,1,0,0,0,0,0,false,false,,3,0,0,0,0,0,false,true,No,DC,No Card,Fell over
 2342,james,19,true,0,0,0,0,0,0,false,false,,0,0,0,4,0,0,false,false,P,SA,No Card,tried climbing
 8013,james,20,true,0,0,0,1,1,0,false,false,,0,0,0,0,4,0,false,false,Dc,SA,No Card,
 1768,nerd,21,false,0,0,0,1,0,0,false,false,,0,1,4,4,0,0,false,false,No,DC,No Card,
 6201,nerd,537,false,0,0,0,1,0,0,false,false,,0,4,1,4,0,0,false,false,Dc,SA,No Card,good bot
+0,nerd,23,true,0,0,0,0,0,0,false,false,,0,0,0,0,0,0,true,false,P,MP,No Card,
 1721,Class D License ,24,false,0,0,0,0,0,0,false,false,,0,0,0,0,0,0,false,false,P,DC,No Card,arm broke half way through match
 10156,Class D License ,25,false,0,0,0,0,0,0,false,false,,0,0,0,0,0,0,false,false,No,DC,No Card,no show
 6201,Class D License ,26,true,0,0,0,1,0,0,false,false,,0,0,0,1,0,0,false,true,No,DC,No Card,
@@ -85,3 +122,10 @@
 138,US,33,true,0,0,0,0,0,0,false,false,,0,1,4,3,0,0,false,false,P,DC,No Card,
 319,US,34,true,0,0,0,0,0,0,false,false,,0,0,2,4,0,2,false,false,Dc,SA,No Card,Good at climbing
 663,US,36,true,0,0,0,1,0,0,false,false,,0,0,0,10,0,0,false,false,No,DC,No Card,No working friendly bots
+2877,Class D License ,44,false,0,0,0,1,0,0,false,false,,0,1,3,3,0,0,false,false,Dc,SA,No Card,
+1247,Class D License ,45,true,0,0,0,0,0,0,false,false,,0,0,0,0,0,0,true,false,P,DC,No Card,Unfinished. No manipulator.
+1512,Class D License ,47,true,0,0,0,0,0,0,false,false,,0,0,0,0,0,0,true,false,P,DC,No Card,
+2342,Class D License ,50,true,0,0,0,1,0,0,false,true,,1,0,2,4,0,0,false,false,No,DC,No Card,Good bot 総
+1512,Class D License ,51,false,0,0,0,0,0,0,false,false,,2,0,0,0,0,0,false,true,No,DC,No Card,No good
+9328,Class D License ,52,false,0,1,0,2,0,0,false,false,,0,0,4,5,0,0,false,false,P,DC,No Card,Something broke towards the end.
+2877,Class D License ,53,true,0,0,0,3,0,0,false,false,,0,0,3,7,0,0,false,false,No,DC,No Card,Climbing mechanism does not look reliable. But 総
