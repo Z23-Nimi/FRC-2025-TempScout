@@ -38,24 +38,8 @@ Papa.parse(file, {
         teams[teamNumber] = {
           teamNumber: teamNumber,
           matchNumbers: [],
-          movedSum: 0,
-          coralL1Sum: 0,
-          coralL2Sum: 0,
-          coralL3Sum: 0,
-          coralL4Sum: 0,
-          bargeAlgaeSum: 0,
-          processorAlgaeSum: 0,
-          dislodgedAlgaeSum: 0,
-          dislodgedTeleopSum: 0,
-          pickupMax: 0,
-          coralL1TeleopSum: 0,
-          coralL2TeleopSum: 0,
-          coralL3TeleopSum: 0,
-          coralL4TeleopSum: 0,
-          bargeAlgaeTeleopSum: 0,
-          processorAlgaeTeleopSum: 0,
-          playedDefenseSum: 0,
-          diedSum: 0,
+          autoFuelSum: 0,
+          teleFuelSum: 0,
           endPositionCounts: {},
           climbingMechanism: null,
           cardList: [],
@@ -150,7 +134,7 @@ Papa.parse(file, {
       // Construct detailed text summary
       const detailsText = `
 Matches: [${team.matchNumbers.join(', ')}]
-Avg Points: ${avgPoints}
+Avg Points: ${avgPointsSum}
       `;
 
       // Create the details element and set its inner HTML
