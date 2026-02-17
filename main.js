@@ -8,36 +8,30 @@ Papa.parse(file, {
 
     // Process each row (expecting at least 25 columns: indexes 0–24)
     data.forEach(row => {
-      if (row.length < 25) return;
+      if (row.length < 20) return;
 
-      const teamNumber = row[0].trim();
+      const teamNumber = row[3].trim();
       const matchNumber = row[2].trim();
 
       // Parse numeric columns (using 0 if not a valid number)
-      const moved           = parseFloat(row[3])  || 0;
-      const coralL1         = parseFloat(row[4])  || 0;
-      const coralL2         = parseFloat(row[5])  || 0;
-      const coralL3         = parseFloat(row[6])  || 0;
-      const coralL4         = parseFloat(row[7])  || 0;
-      const bargeAlgae      = parseFloat(row[8])  || 0;
-      const processorAlgae  = parseFloat(row[9])  || 0;
-      const dislodgedAlgae  = parseFloat(row[10]) || 0;
-      const dislodgedTeleop = parseFloat(row[11]) || 0;
-      const pickupLocation  = parseInt(row[12], 10) || 0;
-      const coralL1Teleop   = parseFloat(row[13]) || 0;
-      const coralL2Teleop   = parseFloat(row[14]) || 0;
-      const coralL3Teleop   = parseFloat(row[15]) || 0;
-      const coralL4Teleop   = parseFloat(row[16]) || 0;
-      const bargeAlgaeTeleop     = parseFloat(row[17]) || 0;
-      const processorAlgaeTeleop = parseFloat(row[18]) || 0;
-      const playedDefense   = parseFloat(row[19]) || 0;
-      const died            = parseFloat(row[20]) || 0;
+      const autoFuel           = parseFloat(row[7])  || 0;
+      const teleFuel           = parseFloat(row[9])  || 0;
 
       // Non-numeric fields
-      const endPosition     = row[21].trim();
-      const climbingMech    = row[22].trim();
-      const card            = row[23].trim();
-      const comment         = row[24].trim();
+      const startPos     = row[1].trim();
+      const autoOutpost  = row[4].trim();
+      const autoDepot    = row[5].trim();
+      const autoNeutral  = row[6].trim();
+      const autoClimb      = row[8].trim();
+      const travelLocation = row[10].trim();
+      const teleOutpost  = row[11].trim();
+      const teleDepot    = row[12].trim();
+      const teleNeutral  = row[13].trim();
+      const endClimb       = row[14].trim();
+      const died            = row[15].trim();
+      const playedDefense   = row[16].trim();
+      const notes           = row[17].trim();
+
 
       // Initialize the team object if it doesn't exist
       if (!teams[teamNumber]) {
@@ -74,55 +68,22 @@ Papa.parse(file, {
 
       // Collect match numbers and sum numeric values
       team.matchNumbers.push(matchNumber);
-      team.movedSum           += moved;
-      team.coralL1Sum         += coralL1;
-      team.coralL2Sum         += coralL2;
-      team.coralL3Sum         += coralL3;
-      team.coralL4Sum         += coralL4;
-      team.bargeAlgaeSum      += bargeAlgae;
-      team.processorAlgaeSum  += processorAlgae;
-      team.dislodgedAlgaeSum  += dislodgedAlgae;
-      team.dislodgedTeleopSum += dislodgedTeleop;
-      team.pickupMax = Math.max(team.pickupMax, pickupLocation);
-      team.coralL1TeleopSum   += coralL1Teleop;
-      team.coralL2TeleopSum   += coralL2Teleop;
-      team.coralL3TeleopSum   += coralL3Teleop;
-      team.coralL4TeleopSum   += coralL4Teleop;
-      team.bargeAlgaeTeleopSum     += bargeAlgaeTeleop;
-      team.processorAlgaeTeleopSum += processorAlgaeTeleop;
-      team.playedDefenseSum   += playedDefense;
-      team.diedSum            += died;
+      team.autoFuelSum += autoFuel;
+      team.teleFuelSum += teleFuel;      
 
       // Tally end position occurrences
-      if (endPosition) {
-        team.endPositionCounts[endPosition] = (team.endPositionCounts[endPosition] || 0) + 1;
-      }
-
-      // Record climbing mechanism if it isn’t "DC"
-      if (!team.climbingMechanism && climbingMech && climbingMech !== "DC") {
-        team.climbingMechanism = climbingMech;
-      }
-
-      // For cards, only record "Yellow" or "Red"
-      if (card === "Yellow" || card === "Red") {
-        team.cardList.push(card);
+      if (endClimb) {
+        team.endPositionCounts[endClimb] = (team.endPositionCounts[endClimb] || 0) + 1;
       }
 
       // Append comments
-      if (comment) {
-        team.commentList.push(comment);
+      if (notes) {
+        team.commentList.push(notes);
       }
 
       team.count++;
     });
 
-    // Mapping for pickup location values
-    const pickupMapping = {
-      1: "None",
-      2: "Ground",
-      3: "Human Player",
-      4: "Both"
-    };
 
     // Clear out any previous content
     const container = document.getElementById("teamsContainer");
@@ -134,34 +95,12 @@ Papa.parse(file, {
     // Calculate each team's numeric average points and store it for sorting
     teamsArray.forEach(team => {
       const count = team.count;
-      const movedAvgNum              = team.movedSum / count;
-      const coralL1AvgNum            = team.coralL1Sum / count;
-      const coralL2AvgNum            = team.coralL2Sum / count;
-      const coralL3AvgNum            = team.coralL3Sum / count;
-      const coralL4AvgNum            = team.coralL4Sum / count;
-      const bargeAlgaeAvgNum         = team.bargeAlgaeSum / count;
-      const processorAlgaeAvgNum     = team.processorAlgaeSum / count;
-      const coralL1TeleopAvgNum      = team.coralL1TeleopSum / count;
-      const coralL2TeleopAvgNum      = team.coralL2TeleopSum / count;
-      const coralL3TeleopAvgNum      = team.coralL3TeleopSum / count;
-      const coralL4TeleopAvgNum      = team.coralL4TeleopSum / count;
-      const bargeAlgaeTeleopAvgNum   = team.bargeAlgaeTeleopSum / count;
-      const processorAlgaeTeleopAvgNum = team.processorAlgaeTeleopSum / count;
+      const autoFuelAvg = team.autoFuelSum / count;
+      const teleFuelAvg = team.teleFuelSum / count;
 
       team.avgPointsNum = 
-        (movedAvgNum * 3) +
-        (coralL1AvgNum * 3) +
-        (coralL2AvgNum * 4) +
-        (coralL3AvgNum * 6) +
-        (coralL4AvgNum * 7) +
-        (processorAlgaeAvgNum * 6) +
-        (bargeAlgaeAvgNum * 4) +
-        (coralL1TeleopAvgNum * 2) +
-        (coralL2TeleopAvgNum * 3) +
-        (coralL3TeleopAvgNum * 4) +
-        (coralL4TeleopAvgNum * 5) +
-        (processorAlgaeTeleopAvgNum * 6) +
-        (bargeAlgaeTeleopAvgNum * 4);
+        (autoFuelAvg * 1) +
+        (teleFuelAvg * 1);
     });
 
     // Sort teams in descending order by avgPointsNum
@@ -173,38 +112,13 @@ Papa.parse(file, {
 
       // Compute averages for display
       const movedAvgNum              = team.movedSum / count;
-      const coralL1AvgNum            = team.coralL1Sum / count;
-      const coralL2AvgNum            = team.coralL2Sum / count;
-      const coralL3AvgNum            = team.coralL3Sum / count;
-      const coralL4AvgNum            = team.coralL4Sum / count;
-      const bargeAlgaeAvgNum         = team.bargeAlgaeSum / count;
-      const processorAlgaeAvgNum     = team.processorAlgaeSum / count;
-      const coralL1TeleopAvgNum      = team.coralL1TeleopSum / count;
-      const coralL2TeleopAvgNum      = team.coralL2TeleopSum / count;
-      const coralL3TeleopAvgNum      = team.coralL3TeleopSum / count;
-      const coralL4TeleopAvgNum      = team.coralL4TeleopSum / count;
-      const bargeAlgaeTeleopAvgNum   = team.bargeAlgaeTeleopSum / count;
-      const processorAlgaeTeleopAvgNum = team.processorAlgaeTeleopSum / count;
+      const autoFuelAvgNum           = team.autoFuelSum / count;
+      const teleFuelAvgNum           = team.teleFuelSum / count;
 
       // Compute formatted averages
       const movedAvg           = movedAvgNum.toFixed(2);
-      const coralL1Avg         = coralL1AvgNum.toFixed(2);
-      const coralL2Avg         = coralL2AvgNum.toFixed(2);
-      const coralL3Avg         = coralL3AvgNum.toFixed(2);
-      const coralL4Avg         = coralL4AvgNum.toFixed(2);
-      const bargeAlgaeAvg      = bargeAlgaeAvgNum.toFixed(2);
-      const processorAlgaeAvg  = processorAlgaeAvgNum.toFixed(2);
-      const dislodgedAlgaeAvg  = (team.dislodgedAlgaeSum / count).toFixed(2);
-      const dislodgedTeleopAvg = (team.dislodgedTeleopSum / count).toFixed(2);
-      const coralL1TeleopAvg   = coralL1TeleopAvgNum.toFixed(2);
-      const coralL2TeleopAvg   = coralL2TeleopAvgNum.toFixed(2);
-      const coralL3TeleopAvg   = coralL3TeleopAvgNum.toFixed(2);
-      const coralL4TeleopAvg   = coralL4TeleopAvgNum.toFixed(2);
-      const bargeAlgaeTeleopAvg      = bargeAlgaeTeleopAvgNum.toFixed(2);
-      const processorAlgaeTeleopAvg  = processorAlgaeTeleopAvgNum.toFixed(2);
-      const playedDefenseAvg   = (team.playedDefenseSum / count).toFixed(2);
-      const diedAvg            = (team.diedSum / count).toFixed(2);
-      const pickupLabel = pickupMapping[team.pickupMax] || "None";
+      const autoFuelAvg        = autoFuelAvgNum.toFixed(2);
+      const teleFuelAvg        = teleFuelAvgNum.toFixed(2);
 
       // Format the average points for display
       const avgPoints = team.avgPointsNum.toFixed(2);
@@ -237,23 +151,6 @@ Papa.parse(file, {
       const detailsText = `
 Matches: [${team.matchNumbers.join(', ')}]
 Avg Points: ${avgPoints}
-Auto:
-  Moved Avg: ${movedAvg}
-  Coral L1: ${coralL1Avg} | Coral L2: ${coralL2Avg} | Coral L3: ${coralL3Avg} | Coral L4: ${coralL4Avg}
-  Barge: ${bargeAlgaeAvg} | Processor: ${processorAlgaeAvg}
-  Dislodged: ${dislodgedAlgaeAvg} 
-Teleop:
-  Dislodged: ${dislodgedTeleopAvg}
-  Teleop Coral L1: ${coralL1TeleopAvg} | Teleop Coral L2: ${coralL2TeleopAvg}
-  Teleop Coral L3: ${coralL3TeleopAvg} | Teleop Coral L4: ${coralL4TeleopAvg}
-  Teleop Barge: ${bargeAlgaeTeleopAvg} | Teleop Processor: ${processorAlgaeTeleopAvg}
-Defense: ${playedDefenseAvg} | Died: ${diedAvg}
-Pickup: ${pickupLabel}
-Endgame:
-  End Pos: [${endPositionsStr}]
-  Climb: ${climbingMechanism}
-Cards: [${cardStr}]
-Comments: [${commentsStr}]
       `;
 
       // Create the details element and set its inner HTML
