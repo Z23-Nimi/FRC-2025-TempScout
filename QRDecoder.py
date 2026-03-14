@@ -39,6 +39,9 @@ def process_folder(folder_path, output_csv, encoding='UTF-8'):
             qr_text = read_qr_code(file_path, encoding)
             if qr_text:
                 rows = parse_qr_text(qr_text)
+                for row in rows:
+                    if len(row) > 0:
+                        row[-1] = row[-1].replace(",", ";")
                 all_rows.extend(rows)
             else:
                 print(f"No QR code found in: {file_path}")
