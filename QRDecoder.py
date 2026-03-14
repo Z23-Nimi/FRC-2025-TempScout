@@ -3,6 +3,7 @@ import csv
 import requests
 from PIL import Image
 from pyzbar.pyzbar import decode
+import re
 
 TBA_API_KEY = "sK9JtAoHZ98PkLKJlBcB0wGTB1IuWYJ7yet9jK47hCMw9rxu3RaO88o9p7jK9Mfx"
 TBA_BASE_URL = "https://www.thebluealliance.com/api/v3"
@@ -23,7 +24,7 @@ def parse_qr_text(qr_text):
     Splits the QR code text into rows (by newline) and columns (by comma).
     Returns a list of rows (each a list of values).
     """
-    return [line.split(',') for line in qr_text.splitlines() if line.strip()]
+    return [re.split(r'[,\t]', line) for line in qr_text.splitlines() if line.strip()]
 
 def process_folder(folder_path, output_csv, encoding='UTF-8'):
     """
