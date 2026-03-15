@@ -134,7 +134,7 @@ Papa.parse(file, {
       // Construct detailed text summary
       const detailsText = `
 Matches: [${team.matchNumbers.join(', ')}]
-Avg Points: ${avgPointsSum}
+Avg Points: ${avgPoints}
       `;
 
       // Create the details element and set its inner HTML
