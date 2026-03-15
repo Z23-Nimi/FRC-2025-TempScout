@@ -1,1 +1,177 @@
-KD,r2,2234,13,Outpost,Depot,Neutral_Zone,23,Climbed,124,bump,Outpost,Depot,Neutral_Zone,t3,Died,Defence,balls the alls,2026-02-16 00:42:50.632000+00:00
+KB,1,4,4925,false,0,false,false,false,true,0,false,false,false,2,NA,NA,false,false,No Card,
+D.S.,11,6,131,true,5,false,false,false,true,0,false,false,true,3,NA,NA,false,true,No Card,Intake broke
+D.S.,12,6,4905,true,5,false,false,false,true,20,false,false,true,3,NA,NA,false,false,No Card,Shooter half broken
+D.S.,31,3,1073,true,0,false,false,false,false,55,true,false,true,1,S,NA,false,false,No Card,
+D.S.,32,3,501,true,5,false,false,false,false,20,true,false,true,3,NA,NA,false,false,No Card,Slow
+D.S.,33,3,1247,false,0,false,false,false,false,0,false,false,false,1,NA,NA,false,false,No Card,No shooter or intake
+D.S.,34,3,11157,true,5,false,false,false,false,5,false,false,true,3,NA,NA,false,false,No Card,Intake broke, parts scattered throughout field
+D.S.,35,3,11175,true,0,false,false,false,false,0,false,false,true,2,NA,NA,false,false,No Card,Appears to not be able to leave neutral zone
+D.S.,36,3,131,true,5,false,false,false,true,60,false,false,true,1,S,NA,false,false,No Card,
+D.S.,37,3,811,true,5,false,false,false,false,20,false,false,true,3,NA,NA,false,false,No Card,Intake broke
+D.S.,38,3,6690,false,0,false,false,false,false,0,false,false,false,1,NA,NA,false,false,No Card,Got stuck on balls; awkward shooter, intake, and hopper; slow
+D.S.,39,3,58,true,0,false,false,false,false,50,true,false,true,1,NA,NA,false,false,No Card,Only moving bot on team
+D.S.,40,3,8724,true,20,false,false,false,true,50,false,false,true,4,S,NA,false,false,No Card,
+D.S.,13,6,3323,false,0,false,false,false,false,0,false,false,false,1,NA,NA,true,false,No Card,Broke down very quickly
+D.S.,46,6,4905,true,0,false,false,false,false,45,true,false,true,3,S,NA,false,false,No Card,Weird intake
+D.S.,47,6,3467,true,60,false,false,false,true,100,true,false,true,1,NA,NA,true,false,No Card,Broke with a minute left and STILL got supercharged
+D.S.,48,6,501,true,5,false,false,false,false,20,false,false,true,3,NA,NA,false,false,No Card,
+D.S.,50,6,4925,false,5,false,false,false,false,0,false,false,false,1,NA,NA,false,false,No Card,Does not have an intake, got bullied
+D.S.,1,6,11175,false,0,false,false,false,false,0,false,false,false,1,NA,NA,true,false,No Card,No intake
+D.S.,15,6,9096,false,0,false,false,false,false,0,false,false,false,1,NA,NA,true,false,No Card,Did not move entire match
+D.S.,16,5,1277,false,0,false,false,false,false,0,false,false,false,1,NA,NA,false,false,No Card,Bad intake, inaccurate shooter
+D.S.,17,5,3467,true,50,false,false,false,true,75,false,false,true,3,NA,NA,true,false,No Card,Broke halfway through (and still scored over 100)
+D.S.,18,5,126,true,10,false,false,false,false,15,false,false,true,1,S,NA,false,false,No Card,
+D.S.,20,5,11269,false,0,false,false,false,false,0,false,false,false,1,NA,NA,true,false,No Card,Stuck then died
+KB,2,4,7314,false,0,false,false,false,false,0,false,false,true,2,NA,NA,false,false,No Card,
+KB,12,4,3467,true,15,false,false,false,true,165,false,false,false,1,S,NA,false,false,No Card,
+KB,13,4,11269,false,0,false,false,false,false,0,false,false,true,2,NA,NA,false,true,No Card,defended during tele
+KB,14,4,6690,false,0,false,false,false,false,0,false,false,false,1,NA,NA,false,false,No Card,got stuck
+KB,15,4,509,true,0,false,false,false,false,0,false,false,true,4,NA,NA,false,false,No Card,this is the one with the dual turret
+KB,22,3,319,false,15,false,false,false,true,35,false,false,false,1,S,NA,false,false,No Card,
+KB,23,3,8724,true,0,false,false,false,true,30,false,false,true,3,S,NA,false,false,No Card,
+KB,1,1,138,false,0,false,false,false,false,20,false,false,true,2,NA,NA,false,false,No Card,
+KB,25,3,348,false,0,false,false,false,false,25,false,false,false,3,NA,NA,false,false,No Card,
+KB,26,3,9055,false,0,false,false,false,false,0,false,false,true,3,NA,NA,false,false,No Card,
+KB,27,3,9096,false,0,false,false,false,false,0,false,false,true,3,NA,NA,false,false,No Card,
+KB,3,4,1277,false,0,false,false,false,false,0,false,false,true,2,L1,PU,false,false,No Card,pick-up seemed to be broken
+KB,28,3,58,false,15,false,false,false,true,80,false,false,false,1,S,NA,false,false,No Card,
+KB,29,3,467,true,0,false,false,false,true,70,false,false,true,2,S,NA,false,false,No Card,
+KB,4,4,319,true,0,false,false,false,false,80,true,false,true,2,NA,NA,false,false,No Card,
+KB,5,4,11269,false,0,false,false,false,false,0,false,false,true,2,NA,NA,false,false,No Card,got stuck on balls in neutral
+KB,6,4,1073,true,5,false,false,false,true,75,false,false,true,1,S,NA,false,false,No Card,helped unstick robots that were stuck
+KB,8,4,467,true,5,false,false,false,false,45,false,false,true,2,S,NA,false,false,No Card,
+KB,9,4,811,false,5,false,false,false,false,30,false,false,true,3,S,NA,false,false,No Card,
+KB,11,4,131,true,0,false,false,false,true,5,false,false,true,3,NA,NA,false,true,No Card,defended during tele because they were broken
+KB,11,4,131,true,0,false,false,false,true,5,false,false,true,3,NA,NA,false,true,No Card,defended during tele because they were broken
+RR,1,2,6690,false,0,false,false,false,false,0,false,false,false,1,NA,NA,false,false,No Card,I don窶冲 think it did much 
+RR,2,2,58,false,0,false,false,false,false,20,false,false,true,1,NA,NA,false,false,No Card,
+RR,4,2,4905,true,0,false,false,false,false,20,false,false,true,1,NA,NA,false,false,No Card,
+RR,5,2,7674,true,20,false,false,false,false,35,false,false,false,1,NA,NA,false,false,No Card,
+RR,11,2,509,true,0,false,false,false,false,20,false,false,true,1,NA,NA,false,false,No Card,
+RR,12,2,8421,true,10,false,true,false,false,20,false,false,false,1,NA,NA,false,false,No Card,
+RR,13,2,58,true,5,false,true,false,false,15,false,false,true,1,NA,NA,false,false,No Card,
+RR,14,3,131,false,0,false,false,false,false,10,false,false,false,1,NA,NA,false,false,No Card,
+RR,15,3,95,true,20,false,false,false,false,10,false,false,false,1,NA,NA,false,false,No Card,
+RR,16,3,1247,true,5,false,false,false,false,5,false,false,true,1,NA,NA,false,false,No Card,
+RR,17,3,2342,false,0,false,false,false,false,5,false,false,true,1,NA,NA,false,false,No Card,
+RR,18,3,7314,false,0,false,false,false,false,15,true,false,false,1,NA,NA,false,false,No Card,
+RR,19,3,95,true,5,false,true,false,false,25,false,false,true,1,NA,NA,false,false,No Card,
+RR,27,3,1729,true,5,false,false,false,false,15,false,false,false,1,NA,NA,false,false,No Card,
+RR,28,3,1073,true,5,false,false,false,true,35,false,false,false,1,NA,NA,false,false,No Card,
+RR,29,3,11157,true,5,false,false,false,false,15,false,false,false,1,NA,NA,false,false,No Card,
+RR,30,3,10138,false,0,false,false,false,false,10,false,false,true,1,NA,NA,false,false,No Card,
+EV,1,1,1247,true,0,false,true,false,false,5,true,false,true,3,S,NA,false,false,No Card,
+EV,2,1,138,false,0,false,false,false,false,5,true,false,true,2,NA,NA,true,false,No Card,
+EV,3,1,126,true,0,false,false,false,false,25,true,false,false,2,S,NA,false,false,No Card,Inconsistent shooting
+EV,4,1,2342,false,0,false,false,false,false,25,true,false,true,4,S,NA,false,false,No Card,
+EV,5,1,3467,true,50,false,false,false,true,220,false,false,true,4,S,NA,false,false,No Card,
+EV,21,5,11175,true,5,false,false,false,false,0,false,false,true,4,S,NA,false,false,No Card,
+EV,22,5,501,true,5,false,false,false,false,10,true,false,true,4,S,NA,false,false,No Card,
+EV,23,5,8421,true,0,false,false,false,false,20,false,false,true,1,S,NA,false,false,No Card,
+EV,24,5,11269,false,0,false,false,false,false,0,false,false,false,1,NA,NA,false,false,No Card,Barely drives
+EV,25,5,11175,true,0,false,false,false,false,0,false,false,true,4,NA,NA,false,false,No Card,
+EV,26,5,6690,false,0,false,false,false,false,0,false,false,false,1,NA,NA,false,false,No Card,Barely drives
+EV,27,5,10138,false,5,false,false,false,false,0,false,false,true,2,NA,NA,false,false,No Card,
+EV,28,5,8421,true,0,false,false,false,false,10,false,false,true,2,NA,NA,false,false,No Card,
+EV,29,5,10937,true,0,false,false,false,false,0,false,false,false,1,NA,NA,false,false,No Card,
+EV,30,5,509,false,0,false,false,false,false,15,true,false,true,4,NA,NA,false,false,No Card,8724 hit a cool emote
+LH,1,5,1729,true,0,false,true,false,false,110,true,false,true,2,S,NA,false,false,No Card,
+LH,2,5,3323,true,5,false,false,false,false,35,false,false,true,3,S,NA,false,false,No Card,hit teammate off bump
+LH,3,5,8421,true,0,false,false,false,false,15,false,false,false,1,NA,NA,false,false,No Card,
+LH,4,5,10138,false,0,false,false,false,false,0,false,false,false,1,NA,NA,false,false,No Card,no blue team 2 robot
+LH,5,5,501,true,0,false,false,false,false,10,false,false,true,3,S,NA,false,false,No Card,intake broke
+LH,17,1,2342,true,5,false,false,false,false,35,false,false,true,4,S,NA,false,false,No Card,
+LH,18,1,4909,true,20,false,false,false,true,115,true,false,true,3,S,NA,false,false,No Card,
+LH,19,1,166,true,5,false,false,false,false,125,true,false,true,3,S,NA,false,false,No Card,
+LH,21,1,467,true,15,false,false,false,true,90,false,false,true,2,S,NA,false,false,No Card,
+LH,22,1,1277,true,0,false,true,false,false,25,true,false,true,2,L1,PU,false,false,No Card,
+LH,23,1,11157,true,5,false,false,false,false,15,false,false,true,3,S,NA,false,false,No Card,
+LH,24,1,1247,false,0,false,false,false,false,20,true,false,false,1,S,NA,false,false,No Card,
+LH,25,1,509,true,0,false,true,false,false,40,true,false,true,2,S,NA,false,false,No Card,
+LH,31,6,6690,false,0,false,false,false,false,0,false,false,true,1,NA,NA,false,false,No Card,drove around a bit and accomplished nothing
+LH,32,6,1729,true,15,false,false,false,true,95,false,false,true,2,S,NA,false,false,No Card,
+LH,33,6,95,true,5,false,false,false,true,175,true,false,true,3,S,NA,false,false,No Card,was being fed the whole time
+LH,34,6,58,false,5,false,false,false,false,70,true,false,true,3,S,NA,false,false,No Card,
+LH,35,6,1729,true,0,false,false,false,true,110,false,false,true,2,S,NA,false,false,No Card,
+LH,41,5,11157,true,5,false,false,false,false,10,true,false,true,4,S,NA,false,false,No Card,
+LH,42,5,10937,true,0,false,false,false,false,0,false,false,false,3,NA,NA,false,false,No Card,did nothing
+LH,43,5,10138,true,5,false,false,false,false,0,false,false,false,2,NA,NA,false,true,No Card,did basically nothing
+LH,44,5,138,false,0,false,false,false,false,0,false,false,false,1,NA,NA,true,false,No Card,died immediately
+LH,45,5,1247,true,0,false,false,false,false,0,false,false,true,3,NA,NA,false,false,No Card,did nothing
+Bn,7,1,7314,false,0,false,false,false,false,0,false,false,false,4,NA,NA,false,false,No Card,Didn窶冲 have an intake and had a very weak shooter.
+Bn,8,1,11157,true,0,false,false,false,false,10,false,false,true,4,NA,NA,false,false,No Card,Spent a lot of time traveling around the neutral zone and had a slow fire rate
+Bn,9,1,4905,false,15,false,false,false,true,35,false,false,true,3,NA,NA,false,false,No Card,Good accuracy
+Bn,10,1,6690,false,0,false,false,false,false,0,false,false,false,1,NA,NA,false,false,No Card,Just stayed in their side and spun randomly. Didn窶冲 intake or shoot.
+Bn,11,1,1073,false,10,false,false,false,false,115,false,false,true,3,NA,NA,false,false,No Card,Scored a lot of points
+Bn,12,1,1729,true,5,false,false,false,true,80,false,false,true,4,NA,NA,false,false,No Card,Got very jittery at the end and was moving slower
+Bn,13,1,467,false,10,false,false,false,false,45,true,false,true,2,NA,NA,false,false,No Card,
+Bn,14,1,7674,false,0,false,false,false,false,55,false,false,true,2,NA,NA,false,false,No Card,Got stuck on fuel once
+Bn,15,1,95,false,5,false,false,false,false,50,true,false,true,2,NA,NA,false,false,No Card,Didn窶冲 try scoring during the last 20 seconds of the match
+Bn,26,1,3467,true,10,false,false,false,false,110,false,false,true,3,NA,NA,false,false,No Card,This bot 100% scored more than that but I had to talk to someone and I couldn窶冲 see it.
+Bn,28,1,1073,true,10,false,false,false,false,115,true,false,true,4,NA,NA,false,false,No Card,Scored a lot, but probably scored more than I recorded.
+Bn,29,1,4909,false,0,false,false,false,false,135,true,false,true,4,NA,NA,false,false,No Card,
+Bn,30,1,11175,false,5,false,false,false,false,25,true,false,true,2,NA,NA,false,false,No Card,
+Bn,32,1,1277,true,0,false,true,false,false,0,true,false,true,1,NA,NA,true,false,No Card,Only scored once and possibly died in their zone for the last 50 seconds
+Bn,33,1,131,true,10,false,false,false,true,60,true,false,true,4,NA,NA,false,false,No Card,
+Bn,34,1,4905,true,10,false,false,false,true,35,true,false,true,2,NA,NA,false,false,No Card,
+Bn,35,1,4909,true,25,false,false,false,false,45,true,false,true,4,NA,NA,false,false,No Card,
+Bn,46,3,509,true,0,false,false,false,false,25,true,false,true,4,NA,NA,false,false,No Card,Didn窶冲 grab fuel very quickly
+Bn,47,3,11157,true,5,false,false,false,false,0,false,false,true,4,NA,NA,false,true,No Card,Barely picked up any fuel and didn窶冲 score anything.
+Bn,48,3,319,true,10,false,false,false,true,0,false,false,true,1,NA,NA,true,false,No Card,Stopped in the middle of the field one third through the match and didn窶冲 move
+Bn,49,3,10138,false,5,false,false,false,false,0,false,false,true,2,NA,NA,false,false,No Card,Scored nothing during tele and just wandered around
+Bn,50,3,166,true,0,false,false,false,true,155,true,false,true,3,NA,NA,false,false,No Card,Hit the side of the bump during auto
+KB,44,4,319,true,20,false,false,false,true,120,false,false,true,3,S,NA,false,false,No Card,
+KB,45,4,58,true,10,false,false,false,false,40,false,false,true,3,S,NA,false,false,No Card,
+J.R.,6,6,1247,false,0,false,false,false,false,0,false,false,false,2,NA,NA,false,false,No Card,Got stuck on fuel
+J.R.,7,6,9055,false,0,false,false,false,false,0,false,false,false,1,NA,NA,true,false,No Card,Did not move from start
+J.R.,8,6,166,true,5,false,false,false,true,20,true,false,true,4,S,NA,false,false,No Card,
+J.R.,9,6,1277,true,0,false,false,false,false,5,false,false,true,2,F,PU,false,false,No Card,
+J.R.,10,6,4909,true,20,false,false,false,true,60,true,false,true,4,S,NA,false,false,No Card,
+J.R.,16,6,138,true,0,false,false,false,false,20,false,false,true,2,S,NA,false,false,No Card,
+J.R.,17,6,11157,true,0,false,false,false,false,5,false,false,true,1,S,NA,false,false,No Card,Missed nearly every shot
+J.R.,19,6,6690,false,0,false,false,false,false,0,false,false,false,1,S,NA,false,false,No Card,
+J.R.,20,6,348,false,0,false,false,false,false,20,false,false,true,4,L1,PU,false,false,No Card,
+J.R.,21,6,11175,true,10,false,false,false,false,5,false,false,true,1,S,NA,false,false,No Card,
+J.R.,22,6,501,true,0,false,false,false,false,10,false,false,true,4,S,NA,false,false,No Card,
+J.R.,23,6,8421,true,0,false,false,false,false,10,false,false,false,1,S,NA,false,false,No Card,
+J.R.,24,6,95,true,40,false,false,false,false,100,false,false,true,4,L1,PU,false,false,No Card,
+J.R.,25,6,319,true,5,false,false,false,true,15,false,false,true,4,S,NA,false,false,No Card,
+J.R.,36,2,138,false,0,false,false,false,false,30,false,false,true,1,S,NA,false,false,No Card,
+J.R.,37,2,319,true,20,false,false,false,true,50,true,false,true,4,S,NA,false,false,No Card,
+J.R.,38,2,9055,true,5,false,false,false,true,20,true,false,true,4,S,NA,false,false,No Card,
+J.R.,39,2,11269,false,0,false,false,false,false,0,false,false,false,1,NA,NA,true,false,No Card,Was dead from beginning
+J.R.,40,2,1073,true,20,false,false,false,true,30,true,false,true,4,S,NA,false,true,No Card,
+J.R.,46,5,8421,true,0,false,false,false,false,0,true,false,true,4,S,NA,false,false,No Card,Did not score
+J.R.,47,5,1073,false,0,false,false,false,false,25,false,false,true,1,S,NA,false,false,No Card,
+J.R.,48,5,6690,false,0,false,false,false,false,5,false,false,false,1,NA,NA,false,false,No Card,Did nothing
+J.R.,49,5,9055,true,0,false,false,false,true,20,true,false,true,4,S,NA,false,false,No Card,
+J.R.,50,5,138,true,5,false,false,false,false,45,true,false,true,2,S,NA,false,false,No Card,
+Epstein,6,5,811,true,5,false,false,false,false,30,true,false,true,4,NA,NA,false,false,No Card,Got stuck for a little 
+Woh... where am I - Biden,7,5,11175,true,0,false,false,false,false,0,false,false,false,1,NA,NA,false,false,No Card,Kit bot, no swerve, got stuck because of auto and didn't get unstuck
+Diddy,8,5,9096,false,0,false,false,false,false,0,false,false,false,4,NA,NA,false,true,No Card,I think the shooter is broken 
+sudo rm -rf --no-preserve-root,9,5,126,true,10,false,false,false,false,20,true,false,true,2,NA,NA,false,false,No Card,
+糟 China 糟 - trump,14,5,11175,true,0,false,false,false,false,0,false,false,true,2,NA,NA,false,true,No Card,Shooter doesn't work
+CRRROCKETTTT,15,5,10138,true,0,false,false,false,false,10,false,false,false,1,NA,NA,false,false,No Card,Kit bot, not good
+Larry,21,5,1247,true,0,false,false,false,false,10,false,false,false,1,NA,NA,false,false,No Card,Kit bot with swerve
+Ball remover 3000,22,5,319,true,20,false,false,false,true,60,true,false,true,1,NA,NA,false,false,No Card,Extremely big hopper, shooter missed a lot because under powered, would be amazing if higher power
+The island,23,4,811,true,0,false,false,false,true,15,false,false,false,1,NA,NA,true,false,No Card,
+Combs,25,4,319,true,10,false,false,false,true,20,false,false,true,1,NA,NA,false,false,No Card,Intake broke at beginning 
+Combs,26,4,811,false,0,false,false,false,false,45,false,false,false,1,NA,NA,false,false,No Card,
+Combs,27,4,126,false,0,false,false,false,false,35,false,false,false,2,NA,NA,false,false,No Card,
+Combs,28,4,7674,false,0,false,false,false,false,10,false,false,true,2,NA,NA,false,false,No Card,Got stuck on bump
+Combs,29,4,138,false,5,false,false,false,false,35,true,false,true,2,NA,NA,false,false,No Card,138!!!!!!!!!!!!!!!
+Combs,30,4,8724,true,15,false,false,false,true,35,true,false,true,1,NA,NA,false,false,No Card,Shooter broke
+Combs,31,4,7314,false,0,false,false,false,false,0,false,false,false,1,NA,NA,false,true,No Card,
+Combs,32,4,166,true,5,false,false,false,true,5,false,false,false,2,NA,NA,false,true,No Card,Broke
+Combs,33,4,9096,false,0,false,false,false,false,0,false,false,true,1,NA,NA,false,true,No Card,
+Combs,34,4,319,true,15,false,false,false,true,65,false,false,true,4,NA,NA,false,false,No Card,Good
+Combs,35,4,348,false,0,false,false,false,false,10,false,false,false,1,L1,PU,false,false,No Card,
+Aiden kaplan,36,1,10138,false,0,false,false,false,false,10,false,false,true,1,S,NA,false,false,No Card,
+Combs,44,1,131,false,10,false,false,false,true,65,false,false,false,2,NA,NA,false,false,No Card,Intake died towards the end 
+Combs,45,1,1277,true,5,false,true,false,false,15,false,false,true,2,NA,NA,false,false,No Card,
+Combs,46,1,11269,false,0,false,false,false,false,0,false,false,false,1,NA,NA,true,false,No Card,
+Combs,47,1,131,true,0,false,false,false,true,75,false,false,false,1,NA,NA,false,false,No Card,
+Combs,48,1,95,true,20,false,false,false,true,55,true,false,true,1,L1,PU,false,true,No Card,
+D.S.,49,6,58,true,5,false,false,false,false,30,true,false,true,1,S,NA,false,false,No Card,Slow intake and slow shooter
+Combs,49,1,10937,false,0,false,false,false,false,0,false,false,false,1,NA,NA,false,false,No Card,Just a kit bot
+Combs,50,1,4909,true,10,false,false,false,true,135,true,false,true,1,NA,NA,false,false,No Card,Fuel hose 
