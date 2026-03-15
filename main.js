@@ -11,7 +11,7 @@ Papa.parse(file, {
       if (row.length < 20) return;
 
       const teamNumber = row[3].trim();
-      const matchNumber = row[2].trim();
+      const matchNumber = row[1].trim();
 
       // Parse numeric columns (using 0 if not a valid number)
       const autoFuel           = parseFloat(row[7])  || 0;
