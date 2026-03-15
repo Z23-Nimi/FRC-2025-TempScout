@@ -4,18 +4,18 @@ D.S.,12,6,4905,true,5,false,false,false,true,20,false,false,true,3,NA,NA,false,f
 D.S.,31,3,1073,true,0,false,false,false,false,55,true,false,true,1,S,NA,false,false,No Card,
 D.S.,32,3,501,true,5,false,false,false,false,20,true,false,true,3,NA,NA,false,false,No Card,Slow
 D.S.,33,3,1247,false,0,false,false,false,false,0,false,false,false,1,NA,NA,false,false,No Card,No shooter or intake
-D.S.,34,3,11157,true,5,false,false,false,false,5,false,false,true,3,NA,NA,false,false,No Card,Intake broke, parts scattered throughout field
+D.S.,34,3,11157,true,5,false,false,false,false,5,false,false,true,3,NA,NA,false,false,No Card,Intake broke; parts scattered throughout field
 D.S.,35,3,11175,true,0,false,false,false,false,0,false,false,true,2,NA,NA,false,false,No Card,Appears to not be able to leave neutral zone
 D.S.,36,3,131,true,5,false,false,false,true,60,false,false,true,1,S,NA,false,false,No Card,
 D.S.,37,3,811,true,5,false,false,false,false,20,false,false,true,3,NA,NA,false,false,No Card,Intake broke
-D.S.,38,3,6690,false,0,false,false,false,false,0,false,false,false,1,NA,NA,false,false,No Card,Got stuck on balls; awkward shooter, intake, and hopper; slow
+D.S.,38,3,6690,false,0,false,false,false,false,0,false,false,false,1,NA,NA,false,false,No Card,Got stuck on balls; awkward shooter; intake; and hopper; slow
 D.S.,39,3,58,true,0,false,false,false,false,50,true,false,true,1,NA,NA,false,false,No Card,Only moving bot on team
 D.S.,40,3,8724,true,20,false,false,false,true,50,false,false,true,4,S,NA,false,false,No Card,
 D.S.,13,6,3323,false,0,false,false,false,false,0,false,false,false,1,NA,NA,true,false,No Card,Broke down very quickly
 D.S.,46,6,4905,true,0,false,false,false,false,45,true,false,true,3,S,NA,false,false,No Card,Weird intake
 D.S.,47,6,3467,true,60,false,false,false,true,100,true,false,true,1,NA,NA,true,false,No Card,Broke with a minute left and STILL got supercharged
 D.S.,48,6,501,true,5,false,false,false,false,20,false,false,true,3,NA,NA,false,false,No Card,
-D.S.,50,6,4925,false,5,false,false,false,false,0,false,false,false,1,NA,NA,false,false,No Card,Does not have an intake, got bullied
+D.S.,50,6,4925,false,5,false,false,false,false,0,false,false,false,1,NA,NA,false,false,No Card,Does not have an intake; got bullied
 D.S.,1,6,11175,false,0,false,false,false,false,0,false,false,false,1,NA,NA,true,false,No Card,No intake
 D.S.,15,6,9096,false,0,false,false,false,false,0,false,false,false,1,NA,NA,true,false,No Card,Did not move entire match
 D.S.,16,5,1277,false,0,false,false,false,false,0,false,false,false,1,NA,NA,false,false,No Card,Bad intake, inaccurate shooter
@@ -147,13 +147,13 @@ J.R.,48,5,6690,false,0,false,false,false,false,5,false,false,false,1,NA,NA,false
 J.R.,49,5,9055,true,0,false,false,false,true,20,true,false,true,4,S,NA,false,false,No Card,
 J.R.,50,5,138,true,5,false,false,false,false,45,true,false,true,2,S,NA,false,false,No Card,
 Epstein,6,5,811,true,5,false,false,false,false,30,true,false,true,4,NA,NA,false,false,No Card,Got stuck for a little 
-Woh... where am I - Biden,7,5,11175,true,0,false,false,false,false,0,false,false,false,1,NA,NA,false,false,No Card,Kit bot, no swerve, got stuck because of auto and didn't get unstuck
+Woh... where am I - Biden,7,5,11175,true,0,false,false,false,false,0,false,false,false,1,NA,NA,false,false,No Card,Kit bot; no swerve; got stuck because of auto and didn't get unstuck
 Diddy,8,5,9096,false,0,false,false,false,false,0,false,false,false,4,NA,NA,false,true,No Card,I think the shooter is broken 
 sudo rm -rf --no-preserve-root,9,5,126,true,10,false,false,false,false,20,true,false,true,2,NA,NA,false,false,No Card,
 糟 China 糟 - trump,14,5,11175,true,0,false,false,false,false,0,false,false,true,2,NA,NA,false,true,No Card,Shooter doesn't work
 CRRROCKETTTT,15,5,10138,true,0,false,false,false,false,10,false,false,false,1,NA,NA,false,false,No Card,Kit bot, not good
 Larry,21,5,1247,true,0,false,false,false,false,10,false,false,false,1,NA,NA,false,false,No Card,Kit bot with swerve
-Ball remover 3000,22,5,319,true,20,false,false,false,true,60,true,false,true,1,NA,NA,false,false,No Card,Extremely big hopper, shooter missed a lot because under powered, would be amazing if higher power
+Ball remover 3000,22,5,319,true,20,false,false,false,true,60,true,false,true,1,NA,NA,false,false,No Card,Extremely big hopper; shooter missed a lot because under powered; would be amazing if higher power
 The island,23,4,811,true,0,false,false,false,true,15,false,false,false,1,NA,NA,true,false,No Card,
 Combs,25,4,319,true,10,false,false,false,true,20,false,false,true,1,NA,NA,false,false,No Card,Intake broke at beginning 
 Combs,26,4,811,false,0,false,false,false,false,45,false,false,false,1,NA,NA,false,false,No Card,
