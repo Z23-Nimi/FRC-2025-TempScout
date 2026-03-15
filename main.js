@@ -18,7 +18,7 @@ Papa.parse(file, {
       const teleFuel           = parseFloat(row[9])  || 0;
 
       // Non-numeric fields
-      const startPos     = row[1].trim();
+      const startPos     = row[2].trim();
       const autoOutpost  = row[4].trim();
       const autoDepot    = row[5].trim();
       const autoNeutral  = row[6].trim();
