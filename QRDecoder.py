@@ -42,6 +42,7 @@ def process_folder(folder_path, output_csv, encoding='UTF-8'):
                 for row in rows:
                     if len(row) > 0:
                         row[-1] = row[-1].replace(",", ";")
+                        row[-1] = row[-1].replace("\n", "\\")
                 all_rows.extend(rows)
             else:
                 print(f"No QR code found in: {file_path}")
@@ -72,16 +73,23 @@ def verify_csv_teams(csv_file, valid_teams):
         for row_num, row in enumerate(reader, start=1):
             if not row:
                 continue
+
+            if len(row) <= 3:
+                print(f"⚠️ Row {row_num} is malformed (too few columns) — row will be deleted.")
+                unknown_count += 1
+                continue
+
             try:
-                team_number = int(row[0])
+                team_number = int(row[3])
                 if team_number in valid_teams:
                     valid_teams[team_number] += 1
                     cleaned_rows.append(row)
                 else:
                     print(f"⚠️ Unknown team {team_number} found on row {row_num} — row will be deleted.")
                     unknown_count += 1
+
             except ValueError:
-                print(f"⚠️ Invalid team number format in row {row_num}: '{row[0]}' — row will be deleted.")
+                print(f"⚠️ Invalid team number format in row {row_num}: '{row[3]}' — row will be deleted.")
                 unknown_count += 1
 
     # Overwrite CSV with cleaned data
